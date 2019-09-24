@@ -14,7 +14,7 @@ applications to ease installation.
 Drop the latest version of `debinate` into your $PATH, set it executable, and
 make sure you own `/opt` if you plan to use the Python `package` command:
 ```bash
-sudo curl -o /usr/local/bin/debinate -L https://github.com/whwright/debinate/releases/download/v0.7.0/debinate && \
+sudo curl -o /usr/local/bin/debinate -L https://github.com/whwright/debinate/releases/download/v0.7.1/debinate && \
 sudo chmod +x /usr/local/bin/debinate && \
 sudo chown $USER:$USER /opt
 ```
@@ -28,7 +28,7 @@ brew install coreutils findutils gnu-tar
 Then drop the latest version of `debinate` into your $PATH, set it executable, and
 make sure you own `/opt` if you plan to use the Python `package` command:
 ```bash
-sudo curl -o /usr/local/bin/debinate -L https://github.com/whwright/debinate/releases/download/v0.7.0/debinate && \
+sudo curl -o /usr/local/bin/debinate -L https://github.com/whwright/debinate/releases/download/v0.7.1/debinate && \
 sudo chmod +x /usr/local/bin/debinate && \
 sudo chown $USER:staff /opt
 ```
@@ -36,7 +36,7 @@ I would consider it experimental because projects with Python dependencies that 
 
 ## Usage
 ```
-Debinate 0.7.0 - roll up your project into a Debian package
+Debinate 0.7.1 - roll up your project into a Debian package
 
 Python:
 
