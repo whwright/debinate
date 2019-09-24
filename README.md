@@ -1,5 +1,3 @@
-[![Build Status](http://img.shields.io/travis/rholder/debinate.svg)](https://travis-ci.org/rholder/debinate) [![Latest Version](http://img.shields.io/badge/latest-0.7.0-brightgreen.svg)](https://github.com/rholder/debinate/releases/tag/v0.7.0) [![License](http://img.shields.io/badge/license-apache%202-brightgreen.svg)](https://github.com/rholder/debinate/blob/master/LICENSE)
-
 ## What is this?
 Debinate started out as a way to let you roll your very own Python projects with
 a bunch of weird dependencies into little standalone Debian packages you can
@@ -16,11 +14,11 @@ applications to ease installation.
 Drop the latest version of `debinate` into your $PATH, set it executable, and
 make sure you own `/opt` if you plan to use the Python `package` command:
 ```bash
-sudo curl -o /usr/local/bin/debinate -L https://github.com/rholder/debinate/releases/download/v0.7.0/debinate && \
+sudo curl -o /usr/local/bin/debinate -L https://github.com/whwright/debinate/releases/download/v0.7.0/debinate && \
 sudo chmod +x /usr/local/bin/debinate && \
 sudo chown $USER:$USER /opt
 ```
-If you're on a Debian/Ubuntu-based system, there's a `.deb` package available [here](https://github.com/rholder/debinate/releases/latest/).
+If you're on a Debian/Ubuntu-based system, there's a `.deb` package available [here](https://github.com/whwright/debinate/releases/latest/).
 
 ### macOS
 As of debinate 0.4.0, experimental support for macOS was added. Use [homebrew](http://brew.sh/) to install the following GNU tools:
@@ -30,7 +28,7 @@ brew install coreutils findutils gnu-tar
 Then drop the latest version of `debinate` into your $PATH, set it executable, and
 make sure you own `/opt` if you plan to use the Python `package` command:
 ```bash
-sudo curl -o /usr/local/bin/debinate -L https://github.com/rholder/debinate/releases/download/v0.7.0/debinate && \
+sudo curl -o /usr/local/bin/debinate -L https://github.com/whwright/debinate/releases/download/v0.7.0/debinate && \
 sudo chmod +x /usr/local/bin/debinate && \
 sudo chown $USER:staff /opt
 ```
