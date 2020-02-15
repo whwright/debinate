@@ -17,7 +17,7 @@
 set -o errexit
 set -o pipefail
 
-readonly DEBINATE_VERSION=0.7.1
+readonly DEBINATE_VERSION=0.7.2
 
 # provisioning directory defaults to .debinate if unset
 readonly PROVISIONING="${DEBINATE_PROVISIONING:-.debinate}"
@@ -117,7 +117,7 @@ function package_python () {
         else
             echo "Creating new virtualenv in ${TARGET_VIRTUAL_ENV}..."
             mkdir -p "${TARGET_VIRTUAL_ENV}"
-            virtualenv --python="${DEBINATE_PYTHON}" --distribute "${TARGET_VIRTUAL_ENV}"
+            virtualenv --python="${DEBINATE_PYTHON}" "${TARGET_VIRTUAL_ENV}"
             source "${TARGET_VIRTUAL_ENV}/bin/activate"
 
             DONE_REQ=false
@@ -136,7 +136,7 @@ function package_python () {
         echo "No requirements.txt, defaulting to pip install"
         echo "Creating new virtualenv in ${TARGET_VIRTUAL_ENV}..."
         mkdir -p "${TARGET_VIRTUAL_ENV}"
-        virtualenv --python="${DEBINATE_PYTHON}" --distribute "${TARGET_VIRTUAL_ENV}"
+        virtualenv --python="${DEBINATE_PYTHON}" "${TARGET_VIRTUAL_ENV}"
         source "${TARGET_VIRTUAL_ENV}/bin/activate"
     fi
 

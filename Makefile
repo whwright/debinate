@@ -1,7 +1,7 @@
 BUILD_DIR=build
 
 NAME=debinate
-VERSION=0.7.1
+VERSION=0.7.2
 
 .PHONY: all clean build package
 
